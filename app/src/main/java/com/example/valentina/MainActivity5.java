@@ -3,6 +3,7 @@ package com.example.valentina;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,5 +38,10 @@ public class MainActivity5 extends AppCompatActivity implements View.OnClickList
         res=n1/n2;
         vv1.setText("El resultado es:" +res);
         Toast.makeText(getApplicationContext(), "El resultado es:" +res, Toast.LENGTH_LONG).show();
+    }
+    public void volver4 (View view)
+    {
+        Intent miIntent=new Intent(MainActivity5.this,MainActivity.class);
+        startActivity(miIntent);
     }
 }
