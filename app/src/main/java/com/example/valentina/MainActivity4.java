@@ -15,6 +15,8 @@ public class MainActivity4 extends AppCompatActivity implements View.OnClickList
     EditText tt1,tt2;
     TextView vt1;
     Button btnMultiplicar;
+
+    calcularm calcula;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,8 @@ public class MainActivity4 extends AppCompatActivity implements View.OnClickList
         vt1=(TextView) findViewById(R.id.textView9);
         btnMultiplicar=(Button) findViewById(R.id.btnmulti);
         btnMultiplicar.setOnClickListener(this);
+
+        calcula = new calcularm();
     }
 
     @Override

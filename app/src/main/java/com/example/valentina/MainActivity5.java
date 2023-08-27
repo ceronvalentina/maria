@@ -16,6 +16,8 @@ public class MainActivity5 extends AppCompatActivity implements View.OnClickList
     EditText td1,td2;
     TextView vv1;
     Button btnDividir;
+
+    calculard calcu;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class MainActivity5 extends AppCompatActivity implements View.OnClickList
         btnDividir=(Button) findViewById(R.id.btnDividir);
         btnDividir.setOnClickListener(this);
 
+        calcu= new calculard();
     }
 
     @Override

@@ -16,7 +16,8 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     TextView tv1;
     Button btnSumar;
 
-    @Override
+    calculars calcular;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
@@ -25,6 +26,8 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         tv1=(TextView) findViewById(R.id.textView3);
         btnSumar=(Button) findViewById(R.id.btnsumar);
         btnSumar.setOnClickListener(this);
+
+        calcular = new calculars();
     }
 
     @Override
